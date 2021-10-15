@@ -1,0 +1,93 @@
+@import './variables.less';
+.header{
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 2px 8px 0 rgba(14,33,60,.2);
+    &-left{
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        font-size: 28px;
+        color: @rootColor;
+        &-description{
+            font-size: 18px;
+        }
+    }
+    &-right{
+        height: 60px;
+        line-height: 60px;
+        float: right;
+    }
+}
+
+
+.divider{
+    height: 30px;
+    border-left: 1px solid @rootColor;
+}
+
+.footer{
+    padding: 40px 0;
+    background-color: #16181e;
+    color: #fff;
+    font-size: 12px;
+    &-content{
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            flex:1;
+            &-link{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                &-title{
+                    font-size: 14px;
+                    color:'#fff';
+                    margin-right: 10px;
+                }
+                &-target{
+                    margin-right: 10px;
+                    color: #858992;
+                }
+            }
+            &-desc{
+                span{
+                    display:block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &-right{
+            flex:1;
+            display:flex;
+            justify-content: space-between;
+            &-contact{
+               margin-right: 10px;
+                span{
+                    display:block;
+                    margin-bottom: 20px;
+                }
+                span:last-child{
+                    color:red;
+                }
+            }
+            &-img{
+                display:flex;
+                &-instance{
+                    display:flex;
+                    flex-direction: column;
+                    margin-right: 20px;
+                    align-items: center;
+                    margin-top: 20px;
+                    img{
+                        max-width: 125px;
+                        max-height: 125px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

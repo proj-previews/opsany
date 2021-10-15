@@ -1,0 +1,74 @@
+.contact{
+    margin-bottom: 50px;
+    &-center{
+        background: url('../../resources/downloadbk.png') no-repeat;
+        min-height: 280px;
+        height: 100%;
+        max-height: 330px;
+        overflow: hidden;
+        &-banner{
+            align-items: center;
+            &-title{
+                padding: 16px;
+                div:first-child{
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: #2f3645;
+                }
+                div:nth-child(2){
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #727a89;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    &-about{
+        width: 100%;
+        height: 100%;
+        &-inner{
+            margin: 0 auto;
+            transform: translateY(-30px);
+            &-card{
+                box-shadow: 0 2px 30px 0 rgba(12, 34, 65, .2);
+                &-col{
+                    .col-title{
+                        display:flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        img{
+                            border-style: none;
+                            vertical-align: middle;
+                        }
+                        span{
+                           display: inline-block;
+                           margin-left: 10px;
+                           color: #333;
+                           font-weight: 500;
+                           font-size: 20px; 
+                        }
+                    }
+                    .col-infobox{
+                        display: flex;
+                        align-items: center;
+                        padding: 22px 0;
+                        &-img{
+                            margin-right: 16px;
+                        }
+                        &-content{
+                            font-size: 14px;
+                            font-weight: 400;
+                            div:first-child{
+                                color:#9297a3;
+                            }
+                            div:nth-child(2){
+                                color:#3e3f44;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

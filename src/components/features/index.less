@@ -1,0 +1,127 @@
+.features{
+    margin-bottom: 20px;
+    &-title{
+        margin-top: 80px;
+        text-align: center;
+        div:first-child{
+            font-size: 36px;
+            font-weight: 700;
+            color: #333;
+        }
+        div:last-child{
+            font-size: 14px;
+            font-weight: 400;
+            color: #bbbec6;
+        }
+    }
+    &-body{
+        margin: 20px -12px -12px;
+        height: 100%;
+        .ant-tabs-nav{
+            margin-bottom: -1px;
+            box-sizing: border-box; // 使得盒子宽度包含了边框和内边距;
+            overflow: hidden;
+            line-height: 1.5;
+            white-space: nowrap; // 文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。
+            // 兼容IE6、IE7、IE8浏览器，经常会遇到一些问题，可以使用zoom:1来解决，有如下作用：触发IE浏览器的haslayout。解决ie下的浮动，margin重叠等一些问题。
+            // 用css中的zoom属性可以让网页实现IE7中的放大缩小功能。
+            // 比如你想让你的网页缩小为原来的一半，那么就在body中加入style="zoom:0.5"，如：
+            //  程序代码
+            // <body style="zoom:0.5"> 
+            zoom: 1;
+        }
+        .ant-tabs-tab{
+            margin: 0 32px 0 0;
+            padding: 12px 16px;
+            text-decoration: none;
+            height: 100%;
+        }
+        .ant-tabs-tab-active{
+            background: #fbfcfd;
+            box-shadow: 0 0 12px 0 rgba(6, 22, 53, .2);
+            font-weight: 500;
+        }
+        &-tab-pane{
+            min-height: 500px;
+            height: 100%;
+            background: url('../../resources/ia_100000030.jpg');
+            overflow: hidden;
+            background-color: transparent;
+            &-left{
+                padding: 12px 24px;
+                opacity: 1;
+                &-top{
+                    padding-top: 30px;
+                }
+                &-desc{
+                    margin-top: 40px;
+                    font-weight: 400;
+                    color: #454851;
+                    line-height: 36px;
+                    font-size: 16px;
+                }
+                &-bottom{
+                    display:flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-top: 60px;
+                    margin-right: 0;
+                    div{
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #333;
+                        line-height: 36px;
+                        padding-right: 20px;
+                    }
+                    img{
+                        vertical-align: middle;
+                        border-style: none;
+                    }
+                }
+            }
+            &-right{
+                padding:12px 24px;
+                opacity: 1;
+                .tab-pane-right-card{
+                    height: 100%;
+                    // box-shadow x, y 模糊距离, 阴影大小, 颜色, 是否内阴影 inset
+                    // 如果 x, y 都为0 则全部边缘都有阴影
+                    box-shadow: 0 2px 30px 0 rgba(12,34,65,.2);
+                    border-radius: 5px;
+                    background: url('../../resources//ia_100000031.png') no-repeat 100% 100%;
+                    &-name{
+                        font-size: 26px;
+                        font-weight: 700;
+                        color: #333;
+                        line-height: 38px;
+                    }
+                    &-imgbox{
+                        margin:20px 0;
+                    }
+                    &-desc{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #8f95a3;
+                        line-height: 30px;
+                    }
+                    &-desc:after, &-desc:before{
+                        box-sizing: border-box;
+                    }
+                    &-tagbox{
+                        display: flex;
+                        margin-top: 30px;
+                        div{
+                            padding: 5px 20px;
+                            background-color: #f4f6fa;
+                            margin: 0 10px;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #575b65;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
