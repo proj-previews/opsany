@@ -13,7 +13,6 @@ export default class Container extends React.Component {
             <Layout style={{minHeight:'100vh', backgroundColor: '#fff'}}>
                 <Header className='header'>
                 <GithubCorners 
-                fixed
                 bgColor='#28a745'
                 zIndex={99}
                 target='__blank'

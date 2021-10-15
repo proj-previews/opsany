@@ -2,6 +2,7 @@
   "name": "21-opsany",
   "version": "0.1.0",
   "private": true,
+	"homepage":"https://proj-previews.github.io/opsany",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@craco/craco": "^6.2.0",
@@ -11,6 +12,7 @@
     "animate.css": "^4.1.1",
     "antd": "^4.16.7",
     "craco-less": "^1.18.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-geetest": "^5.0.1",
@@ -23,7 +25,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+		"predeploy":"craco build",
+		"deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

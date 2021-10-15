@@ -30,7 +30,6 @@ const Login = () => {
         return (
             <div className='page-content'>
                 <GithubCorners 
-                fixed
                 bottom
                 bgColor='#28a745'
                 zIndex={99}
