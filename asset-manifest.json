@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/opsany/static/css/main.2b87ef1c.chunk.css",
-    "main.js": "/opsany/static/js/main.925070a9.chunk.js",
-    "main.js.map": "/opsany/static/js/main.925070a9.chunk.js.map",
+    "main.js": "/opsany/static/js/main.94bbe956.chunk.js",
+    "main.js.map": "/opsany/static/js/main.94bbe956.chunk.js.map",
     "runtime-main.js": "/opsany/static/js/runtime-main.73a93540.js",
     "runtime-main.js.map": "/opsany/static/js/runtime-main.73a93540.js.map",
     "static/js/2.c51b8836.chunk.js": "/opsany/static/js/2.c51b8836.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.73a93540.js",
     "static/js/2.c51b8836.chunk.js",
     "static/css/main.2b87ef1c.chunk.css",
-    "static/js/main.925070a9.chunk.js"
+    "static/js/main.94bbe956.chunk.js"
   ]
 }
