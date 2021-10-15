@@ -55,7 +55,7 @@ const Login = () => {
                         <Form
                         form={form}
                         onFinish={onFinish}
-                        initialValues={{remember: true}}
+                        initialValues={{remember: false}}
                         className='login-form-detail-content'
                         >
                             <Form.Item
@@ -63,12 +63,12 @@ const Login = () => {
                                 rules={[
                                     {
                                         required: true,
-                                        message: {UserNameText}
+                                        message: `${UserNameText}`
                                     }
                                 ]}
                             >
                                 <Input 
-                                prefix={<UserOutlined style={{color:'red'}}/>} 
+                                prefix={<UserOutlined style={{color:'#00BC6A'}}/>} 
                                 placeholder={UserNameText}
                                 className='login-form-detail-content-item'
                                  />
@@ -78,12 +78,12 @@ const Login = () => {
                                 rules={[
                                     {
                                     required: true,
-                                    message: {PwdText}
+                                    message: `${PwdText}`
                                     }
                                 ]}
                             >
                                 <Input 
-                                prefix={<LockOutlined style={{ color: 'red' }}/>}
+                                prefix={<LockOutlined style={{ color: '#00BC6A' }}/>}
                                 type='password'
                                 placeholder={PwdText}
                                 className='login-form-detail-content-item'
@@ -108,7 +108,7 @@ const Login = () => {
                                         htmlType='submit'
                                         className='login-form-detail-content-button'
                                         disabled={
-                                            !form.isFieldsTouched(true) ||
+                                            !(form.isFieldTouched('username')&& form.isFieldTouched('pwd')) ||
                                             !!form.getFieldsError().filter(({errors})=>errors.length).length
                                         }
                                         >{SubmitText}</Button>
