@@ -17,15 +17,15 @@ const Contact = () => {
         message.success(`${ContactMsg}`)
     }
     return (
-        <div className='contact'>
-            <Row type='flex' align='middle' justify='space-between' className='contact-body'>
+        <div className='contact-block'>
+            <Row type='flex' align='middle' justify='space-between' className='contact-block-body'>
                 <Col xs={0} sm={0} md={2} lg={3} xl={4} xxl={4} />
                 <Col xs={22} sm={22} md={20} lg={18} xl={16} xxl={16} style={{margin: '0px auto'}}>
-                    <div className='contact-body-title'>{ContactTitle}</div>
-                    <Row className='contact-body-form'>
+                    <div className='contact-block-body-title'>{ContactTitle}</div>
+                    <Row className='contact-block-body-form'>
                         <Form 
                         layout='horizontal' 
-                        className='contact-body-form-inner'
+                        className='contact-block-body-form-inner'
                         onFinish={onSuccess}
                         >
                             <Col xs={24} sm={24} md={24} lg={8} xl={8} xxl={8} className='contact-form-item'>
